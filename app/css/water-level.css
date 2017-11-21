@@ -1,0 +1,8 @@
+/*Custom CSS*/
+.water-level {
+	float: left;
+}
+
+.water-level.key {
+	font-weight: bold;
+}

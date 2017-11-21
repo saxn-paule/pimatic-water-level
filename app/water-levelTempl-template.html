@@ -1,0 +1,12 @@
+<script id="waterLevel-template" type="text/template">
+    <li data-bind="attr: { id: id }" class="sortable no-header tv-programm">
+        <div>
+            <label class="device-label" data-bind="text: name" />
+        </div>
+
+        <div class="water-level key">Aktueller Wasserstand:</div><div class="water-level value" data-bind="attr: { id: id + '_water_level_actual'}"></div>
+        <div style="clear:both">&nbsp;</div>
+        <div class="ct-chart ct-perfect-fourth"></div>
+        <div style="width:400px; height:250px;" class="water-level graph" data-bind="attr: { id: id + '_water_level_graph'}"></div>
+    </li>
+</script>

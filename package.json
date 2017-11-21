@@ -1,0 +1,25 @@
+{ "name": "pimatic-water-level",
+  "description": "Water level plugin",
+  "author": "Paul Schmidt",
+  "main": "water-level",
+  "files": [
+    "water-level.coffee",
+    "README.md",
+    "water-level-config-schema.coffee",
+    "app"
+  ],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/saxn-paule/pimatic-water-level.git"
+  },
+  "configSchema": "water-level-config-schema.coffee",
+  "dependencies": {},
+  "peerDependencies": {
+    "pimatic": "0.8.*"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  }
+}
