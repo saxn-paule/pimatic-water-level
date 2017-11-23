@@ -10,7 +10,7 @@ There is only one configuration parameter
       "id": "river-town",
       "name": "River Town",
       "class": "WaterLevelDevice",
-      "uuid": "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations.json"
+      "uuid": "522286e2-b2b3-4d0d-9a11-01b3ea418c76"
     },
 ```
 
