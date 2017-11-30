@@ -6,12 +6,24 @@ There is only one configuration parameter
 
 ### Sample Device Config:
 ```javascript
-    {
-      "id": "river-town",
-      "name": "River Town",
-      "class": "WaterLevelDevice",
-      "uuid": "522286e2-b2b3-4d0d-9a11-01b3ea418c76"
-    },
+{
+  "id": "river-town",
+  "name": "River Town",
+  "class": "WaterLevelDevice",
+  "uuid": "522286e2-b2b3-4d0d-9a11-01b3ea418c76"
+}
+```
+
+### Sample Sensor Config:
+```javascript
+{
+  "class": "WaterLevelSensor",
+  "id": "water-level",
+  "name": "Wasserstand",
+  "interval": 10,
+  "uuid": "522286e2-b2b3-4d0d-9a11-01b3ea418c76",
+  "xAttributeOptions": []
+}
 ```
 
 # Beware
