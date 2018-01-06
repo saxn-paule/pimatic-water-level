@@ -84,7 +84,6 @@ module.exports = (env) ->
         type: t.number
 
     constructor: (@config, lastState) ->
-      env.logger.info @config
       @name = @config.name
       @id = @config.id
       @uuid = @config.uuid

@@ -1,8 +1,12 @@
 /*Custom CSS*/
 .water-level {
-	float: left;
 }
 
 .water-level.key {
 	font-weight: bold;
+	float: left;
+}
+
+.water-level .ct-label {
+	color: #c4c4c4;
 }
