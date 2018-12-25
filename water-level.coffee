@@ -47,13 +47,10 @@ module.exports = (env) ->
         type: t.number
 
     constructor: (@config, @plugin) ->
-      @id = @config.id
-      @name = @config.name
+      super(config.id, config.name)
       @uuid = @config.uuid
       @showGraph = @config.showGraph or true
       @graphDays = @config.graphDays or 7
-
-      super()
 
     getUuid: -> Promise.resolve(@uuid)
 
@@ -84,8 +81,7 @@ module.exports = (env) ->
         type: t.number
 
     constructor: (@config, lastState) ->
-      @name = @config.name
-      @id = @config.id
+      super(config.id, config.name)
       @uuid = @config.uuid
       @level = 0
       @interval = @config.interval or 10
@@ -110,7 +106,6 @@ module.exports = (env) ->
             @_updateValueTimeout = setTimeout(updateValue, @interval * 60000)
           )
 
-      super()
       updateValue()
 
     destroy: () ->
@@ -127,7 +122,7 @@ module.exports = (env) ->
       actualUrl = apiActualUrl.replace("uuid-placeholder", @uuid)
 
       Request.get actualUrl, (error, response, body) =>
-       	if error
+        if error
           if error.code is "ENOTFOUND"
             env.logger.warn "Cannot connect to :" + actualUrl
           else
