@@ -10,7 +10,7 @@
     "device-config-schema.coffee",
     "app"
   ],
-  "version": "0.0.5",
+  "version": "0.10.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/saxn-paule/pimatic-water-level.git"
@@ -23,10 +23,10 @@
     "request": "2.83.*"
   },
   "peerDependencies": {
-    "pimatic": "0.9.*"
+    "pimatic": "0.10.*"
   },
   "engines": {
-    "node": ">0.8.x",
-    "npm": ">1.1.x"
+    "node": ">8.x.x",
+    "npm": ">6.x.x"
   }
 }

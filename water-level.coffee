@@ -46,8 +46,9 @@ module.exports = (env) ->
         description: "How many days should the graph contain"
         type: t.number
 
-    constructor: (@config, @plugin) ->
+    constructor: (config, plugin) ->
       super(config.id, config.name)
+      @config = config
       @uuid = @config.uuid
       @showGraph = @config.showGraph or true
       @graphDays = @config.graphDays or 7
@@ -80,8 +81,9 @@ module.exports = (env) ->
         description: "current water level in cm"
         type: t.number
 
-    constructor: (@config, lastState) ->
+    constructor: (config, lastState) ->
       super(config.id, config.name)
+      @config = config
       @uuid = @config.uuid
       @level = 0
       @interval = @config.interval or 10
